@@ -1,0 +1,70 @@
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: $base-font-size
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-size: inherit
+
+ul, li
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	display: inline-block
+	cursor: pointer
+	color: $white-text
+
+p
+	margin: 0
+
+img,
+.img
+	max-width: 100%
+	height: auto
+	object-fit: cover
+
+// ::selection
+// 	background-color: $accent
+// 	color: #000

@@ -1,5 +1,5 @@
 {
-  "name": "shop_bycicle",
+  "name": "bike-shop",
   "version": "1.0.0",
   "description": "Online store",
   "main": "index.js",
@@ -28,5 +28,17 @@
     "gulp-util": "^3.0.8",
     "vinyl-ftp": "^0.6.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7malevich/bike-shop.git"
+  },
+  "keywords": [
+    "html",
+    "sass"
+  ],
+  "bugs": {
+    "url": "https://github.com/7malevich/bike-shop/issues"
+  },
+  "homepage": "https://github.com/7malevich/bike-shop#readme"
 }

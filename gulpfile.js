@@ -91,7 +91,7 @@ gulp.task("buildFiles", function () {
   return gulp.src(["app/*.html", "app/.htaccess"]).pipe(gulp.dest("dist"));
 });
 gulp.task("buildCss", function () {
-  return gulp.src(["app/css/main.min.css"]).pipe(gulp.dest("dist/css"));
+  return gulp.src(["app/css/*.min.css"]).pipe(gulp.dest("dist/css"));
 });
 gulp.task("buildJs", function () {
   return gulp.src(["app/js/scripts.min.js"]).pipe(gulp.dest("dist/js"));

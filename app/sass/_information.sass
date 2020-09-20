@@ -1,0 +1,78 @@
+.s-information
+	background-color: rgb(215, 212, 209)
+
+.information
+	display: flex
+	& > *
+		flex: 1
+		margin-right: 40px
+		&:last-child
+			margin-right: 0
+	&-item
+		&__link
+			border-bottom: 1px solid rgba(38, 38, 38, 0.15)
+		&__count 
+			color: #8eb359
+		&__body
+			height: 250px
+
+
+.news-prev
+	&__inner
+		display: flex
+		flex-direction: column
+		height: 100%
+	&__item
+		display: flex
+		align-items: flex-start
+		margin-bottom: 40px
+		&:last-child
+			margin-bottom: 0
+	&__img
+		width: 80px
+		height: 80px
+		background-size: cover
+		flex-shrink: 0
+		background-repeat: no-repeat
+		border-radius: 4px
+		margin-right: 20px
+	// &__info
+	// 	display: flex
+	// 	flex-direction: column
+	// &__footer
+	// 	display: flex
+	// 	// align-items: end
+	// 	flex: 1 0 auto
+
+.rewiew-prev
+	&__text
+		margin-bottom: 15px
+	&__author
+		background-color: #ffffff
+		border: 1px solid rgba(38, 38, 38, 0.1)
+		border-radius: 20px
+		color: #939495
+		font-size: 12px
+		line-height: 18px
+		padding: 0 15px
+
+.brand
+	&__list
+		display: flex
+		flex-wrap: wrap
+	&__item
+		text-align: center
+		margin-right: 10px
+		margin-bottom: 16px
+		&:last-child
+			margin-right: 0
+	&__image
+		margin-bottom: 5px
+		max-width: 70px
+		max-height: 80px
+		&:hover
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05)
+			transition: all .5s
+	&__link
+		display: flex
+		flex-direction: column

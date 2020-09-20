@@ -1,4 +1,5 @@
 .header
+	border-bottom: 1px solid $athens-gray
 	&-top 
 		background-color: $athens-gray
 		padding: 10px 0
@@ -29,10 +30,12 @@
 				font-size: 12px
 				color: rgba($tundora, .7)
 				line-height: 1.67
-				
+				text-decoration: underline
+				&::hover 
+					text-decoration: underline
 		&__addres
 			display: flex
-			// flex-direction: column 
+			align-items: center
 			flex: 0 0 200px
 			width: 190px
 			img 
@@ -40,19 +43,16 @@
 				margin-right: 15px
 				width: 17px
 				flex: 0 0 15px
+				
 			&-text 
 				font-size: 12px
-				// color: rgba(	$tundora, .7)
 				line-height: 1.67
 
-				// max-width: 145px	
 		&__shop
 			display: flex
-			// flex: 0 0 130px
 			width: 200px
 			justify-content: space-between
 	&-goods
-
 		display: flex
 		flex-direction: column
 		&__price	
@@ -65,9 +65,71 @@
 	&-basket
 		display: flex
 		align-items: center
-
+		cursor: pointer		
+		text-align: center
+		padding: 0 20px
+		background-color: $athens-gray
+		border-radius: 19px
 		&__icon
 			fill: $basket-orange
+			margin-right: 10px
+	&-menu
+		&__content
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+.search
+	position: relative
+	&__icon
+		margin-left: auto
+		fill: $basket-orange
+		cursor: pointer
+		width: 33px
+		height: 33px
+		padding: 5px
+		// display: none
+	&__body
+		background-color: $white
+		padding: 20px
+		position: relative
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 10px 20px 0 rgba(0, 0, 0, 0.1)
+		position: absolute
+		top: -25px
+		right: 0	
+		// display: none	
+	&__form
+		display: flex
+		align-items: center
+		width: 550px
+	&__placeholder
+		background-color: transparent
+		border: 1px solid $border	
+		border-right: 0
+		border-radius: 2px 0 0 2px
+		color: $tundora
+		padding: 0 50px 0 20px
+		line-height: 48px
+		height: 50px
+		width: 100%
+		flex: 1
+	&__btn
+		// position: absolute 
+		// top: 20px
+		// right: 20px
+		background-color: $basket-orange
+		border: 0
+		border-radius: 0 4px 4px 0
+		color: $white-text
+		cursor: pointer
+		font-weight: 700
+		height: 50px
+		padding: 0 15px
+		flex: 0 0 auto
+
+
+
+	
 
 
 
@@ -82,5 +144,100 @@
 		font-size: 12px
 		line-height: 1.67
 
+.main
+	&-nav
+		&__item
+			display: flex
+			align-items: center
+			position: relative
+		&__list
+			margin-right: 40px
+			&:hover 
+				& .main-nav__drapdown-item
+					transition: all .5s
+					display: block
+				& .main-nav__link
+					border-bottom-color: $basket-orange
+					transition: all .25s
 
+					
+			&:last-child
+				margin-right: 0
 
+		&__link
+			padding: 15px 0
+			display: block
+			font-size: 15px
+			line-height: 1.88
+			border-bottom: 2px solid transparent
+			color: $tundora			
+		&__drapdown
+			position: relative
+			&-item 
+				// top: 100%
+				// left: 0
+				// position: absolute
+				width: 250px
+				background-color: $white
+				box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05)
+				padding-top: 10px	
+				display: none	
+			&-list 
+				padding: 10px 15px
+				&:hover 
+					transition: all .3s
+					svg 
+						path 
+							stroke: $basket-orange
+					.main-nav__drapdown-link
+						color: $basket-orange
+					.main-supnav__drapdawn
+						display: block 
+			&-link 
+				justify-content: space-between
+				display: flex
+				align-items: center	
+	&-supnav
+		&__drapdawn
+			// top: 0px
+			// left: 280px
+			height: 100%
+			// position: absolute
+			width: 220px
+			background-color: $white
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05)
+			padding-top: 10px
+			display: none
+
+			&-list
+				padding: 7px 5px
+			&-item 
+			&-link 
+				justify-content: space-between
+				display: flex
+				align-items: center	
+				&:hover 
+					color: $basket-orange
+
+.main-nav--1
+	position: absolute
+	top: 100%
+	left: 0
+	z-index: 2		
+
+.main-supnav--1
+	position: absolute
+	top: 0
+	left: 250px
+	z-index: 2
+
+// .main-supnav--2
+// 	height: auto
+// 	display: flex
+
+.main-nav--2
+	position: absolute
+	top: 100%
+	left: 0
+	z-index: 2
+	padding-bottom: 25px
